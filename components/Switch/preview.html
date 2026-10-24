@@ -1,0 +1,12 @@
+<!-- @dsCard group="Inputs" height=72 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"></head>
+<body>
+<div id="root"></div>
+<script>
+  var B = window.Bauhaus, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', { className: 'bh-row' }, h(B.Switch, { label: 'Notifications', defaultChecked: true }), h(B.Switch, { label: 'Dark rooms only' }), h(B.Switch, { label: 'Locked', disabled: true })));
+</script>
+</body>
+</html>

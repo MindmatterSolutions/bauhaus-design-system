@@ -1,0 +1,59 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Bauhaus</title>
+<style>
+  html, body { margin: 0; height: 100%; }
+  body { background: var(--surface); color: var(--ink); font-family: var(--font-sans); overflow: hidden; }
+  .cover { position: relative; height: 288px; overflow: hidden; }
+  .art { position: absolute; top: 0; left: 480px; width: 480px; height: 288px; overflow: hidden; }
+  .art svg { display: block; width: 480px; height: 288px; }
+  .red { fill: var(--red); }
+  .yellow { fill: var(--yellow); }
+  .blue { fill: var(--blue); }
+  .ink { fill: var(--ink); }
+  .cut { fill: var(--surface); }
+  .sq { rx: var(--radius-0); }
+  .rule { fill: none; stroke: var(--ink); stroke-width: var(--stroke-4); stroke-linecap: butt; }
+  .words { position: absolute; left: var(--space-6); bottom: var(--space-6); max-width: 440px; }
+  .name { margin: 0; font-size: 100px; line-height: .92; font-weight: 700; letter-spacing: -.02em; color: var(--ink); }
+  .tag { margin: var(--space-2) 0 0 4px; font-size: 14px; line-height: 20px; color: var(--ink-muted); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 480 288" width="480" height="288">
+<!--
+  blocks      blue disc r112 (radius-disc) · red square 112 (space-16 + space-12, radius-0) · yellow triangle 256 wide rising from the bottom edge and bleeding right · ink slab 72 (space-12 + space-6) bled off the top-right corner — about 45% of the art box
+  arrangement Kandinsky's three primaries overlapping on one diagonal: the square laid over the disc, the triangle over both, the ink slab as counterweight
+  pattern     stripes, from "heavy rules on an asymmetric grid": stroke-4 ground-coloured stripes at a space-3 pitch cut into the triangle, plus one stroke-4 ink rule ending in a disc, the circuit line from the poster references
+  scales      sides from space-12/space-16; stripe pitch space-3; rule and stripes stroke-4; corners radius-0, the dot and disc radius-disc
+-->
+<defs><clipPath id="tri"><polygon points="232,288 360,96 488,288"/></clipPath></defs>
+<circle class="blue" cx="296" cy="120" r="112"/>
+<rect class="red sq" x="136" y="40" width="112" height="112"/>
+<polygon class="yellow" points="232,288 360,96 488,288"/>
+<g class="cut" clip-path="url(#tri)">
+<rect x="232" y="204" width="256" height="4"/>
+<rect x="232" y="216" width="256" height="4"/>
+<rect x="232" y="228" width="256" height="4"/>
+<rect x="232" y="240" width="256" height="4"/>
+<rect x="232" y="252" width="256" height="4"/>
+<rect x="232" y="264" width="256" height="4"/>
+<rect x="232" y="276" width="256" height="4"/>
+</g>
+<rect class="ink sq" x="408" y="-8" width="72" height="72"/>
+<polyline class="rule" points="16,248 112,248 112,184"/>
+<circle class="ink" cx="112" cy="180" r="8"/>
+</svg>
+</div>
+<div class="words">
+<h1 class="name">Bauhaus</h1>
+<p class="tag">Square, triangle, circle. Red, yellow, blue.</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!-- @dsCard group="Containers" height=260 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"></head>
+<body>
+<div id="root"></div>
+<script>
+  var B = window.Bauhaus, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', { className: 'bh-row', style: { alignItems: 'start', paddingTop: 24 } }, h(B.Card, { eyebrow: 'INGB122', title: 'Semester test 2', mark: 'circle', markColor: 'blue', footer: [h(B.Tag, { key: 't', tone: 'yellow' }, 'Due soon'), h('span', { key: 's' }, 'Fri 14:00')] }, h('p', null, 'Study units 4 to 6. Bring a calculator and your student card.')), h(B.Card, { eyebrow: 'Workshop', title: 'Weaving studio' }, h('p', null, 'Open from 08:00. Looms are booked in two-hour blocks.'))));
+</script>
+</body>
+</html>

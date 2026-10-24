@@ -1,0 +1,12 @@
+<!-- @dsCard group="Actions" height=88 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"></head>
+<body>
+<div id="root"></div>
+<script>
+  var B = window.Bauhaus, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', { className: 'bh-row' }, h(B.Button, null, 'Submit'), h(B.Button, { variant: 'secondary' }, 'Save draft'), h(B.Button, { variant: 'quiet' }, 'Cancel'), h(B.Button, { size: 'sm' }, 'Add'), h(B.Button, { disabled: true }, 'Disabled')));
+</script>
+</body>
+</html>

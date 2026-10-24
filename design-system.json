@@ -1,0 +1,33 @@
+{
+  "v": 3,
+  "assetGroups": {},
+  "blobs": {},
+  "createdOnFiles": {
+    "at": "2026-10-13T10:53:56Z",
+    "v": 1
+  },
+  "docs": {
+    "sections": []
+  },
+  "groups": [],
+  "lastChange": {
+    "at": "2026-10-13T10:58:00Z",
+    "by": "Neall de Waal",
+    "note": "First version: Night and Paper themes, type scale, eight components and the cover.",
+    "via": "Claude"
+  },
+  "layout": "files",
+  "libraries": [
+    {
+      "name": "react",
+      "version": "18"
+    },
+    {
+      "name": "react-dom",
+      "version": "18"
+    }
+  ],
+  "namespace": "Bauhaus",
+  "sections": {},
+  "title": "Bauhaus"
+}

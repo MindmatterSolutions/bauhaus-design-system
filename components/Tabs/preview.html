@@ -1,0 +1,12 @@
+<!-- @dsCard group="Navigation" height=140 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"></head>
+<body>
+<div id="root"></div>
+<script>
+  var B = window.Bauhaus, h = React.createElement;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', { className: 'bh-stack' }, h(B.Tabs, { label: 'Module views', items: [ { id: 'overview', label: 'Overview', content: h('p', { style: { margin: 0 } }, 'Three assessments remain this semester.') }, { id: 'grades', label: 'Grades', content: h('p', { style: { margin: 0 } }, 'Participation mark: 68%.') }, { id: 'files', label: 'Files', content: h('p', { style: { margin: 0 } }, '12 files from the study guide.') } ] })));
+</script>
+</body>
+</html>
